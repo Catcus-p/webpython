@@ -74,7 +74,7 @@ if temp > 20:
     print(weather)
 else:
     print("cold")
-"""
+
 
 
 num1 = float(input("Enter first number: "))
@@ -104,4 +104,23 @@ elif choice == '4':
         print("Cannot divide by zero")
 
 else:
-    print("Invalid choice")
+    print("Invalid choice")"""
+
+
+import random
+
+# generate random number
+secret_number = random.randint(1, 10)
+
+print("Guess a number between 1 and 10")
+
+guess = int(input("Enter your guess: "))
+
+if guess == secret_number:
+    print("🎉 Correct! You guessed it right.")
+elif guess > secret_number:
+    print("Too high!")
+else:
+    print("Too low!")
+
+print("The correct number was:", secret_number)
