@@ -104,7 +104,7 @@ elif choice == '4':
         print("Cannot divide by zero")
 
 else:
-    print("Invalid choice")"""
+    print("Invalid choice")
 
 
 import random
@@ -123,4 +123,28 @@ elif guess > secret_number:
 else:
     print("Too low!")
 
-print("The correct number was:", secret_number)
+print("The correct number was:", secret_number)""
+ 
+range(10)
+print(list(range(10)))
+
+range(5, 15)
+for i in range(5, 15):
+    print(i)
+print(list(range(5, 15)) )
+
+range(0, 20, 2)
+print(list(range(0, 20, 2)) )"""
+
+fruits = ["apple", "banana", "cherry"]
+for index, fruit in enumerate(fruits , start=1):
+    print(f"Index: {index}, Fruit: {fruit}")
+    
+counter = 5
+while counter > 0:
+    """print(f"Counter: {counter}")
+    counter -= 1 """
+    if counter == 3:
+        break
+    print(f"Counter: {counter}")
+    counter -= 1
