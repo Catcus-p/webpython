@@ -123,7 +123,7 @@ elif guess > secret_number:
 else:
     print("Too low!")
 
-print("The correct number was:", secret_number)""
+print("The correct number was:", secret_number)"""
  
 range(10)
 print(list(range(10)))
@@ -134,7 +134,7 @@ for i in range(5, 15):
 print(list(range(5, 15)) )
 
 range(0, 20, 2)
-print(list(range(0, 20, 2)) )"""
+print(list(range(0, 20, 2)) )
 
 fruits = ["apple", "banana", "cherry"]
 for index, fruit in enumerate(fruits , start=1):
@@ -148,3 +148,11 @@ while counter > 0:
         break
     print(f"Counter: {counter}")
     counter -= 1
+
+cities = ["New York", "London", "Paris", "Tokyo"]
+capitals = ["Washington D.C.", "London", "Paris",]
+for city,capital in zip(cities, capitals):
+    print(f"{city} has capital {capital}")
+
+squares = [x**2 for x in range(10)]
+print(squares)
