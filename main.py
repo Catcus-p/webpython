@@ -1,4 +1,4 @@
-"""def main():
+def main():
     age: int = 15
     print(age)
 
@@ -123,7 +123,7 @@ elif guess > secret_number:
 else:
     print("Too low!")
 
-print("The correct number was:", secret_number)"""
+print("The correct number was:", secret_number)
  
 range(10)
 print(list(range(10)))
@@ -142,8 +142,8 @@ for index, fruit in enumerate(fruits , start=1):
     
 counter = 5
 while counter > 0:
-    """print(f"Counter: {counter}")
-    counter -= 1 """
+    print(f"Counter: {counter}")
+    counter -= 1 
     if counter == 3:
         break
     print(f"Counter: {counter}")
@@ -155,4 +155,25 @@ for city,capital in zip(cities, capitals):
     print(f"{city} has capital {capital}")
 
 squares = [x**2 for x in range(10)]
-print(squares)
+print(squares)  
+
+fruits = ["apple", "banana", "cherry"]
+last = fruits[1:2]        # start:end:step
+print(last)
+list.append(fruits, "orange")
+print(fruits)
+list = [1, 2, 3, 4, 5]
+list.insert(2, 10)  # Insert 10 at index 2
+print(list)
+list.remove(3)  # Remove the first occurrence of 3
+print(list)
+  # Remove and return the element at index 1
+list.pop(1)
+print(list)
+num =[5, 2, 9, 1, 5]
+num.sort()  # Sort the list in ascending order
+num.reverse()  # Reverse the list
+num.sort(reverse=True)  # Sort the list in descending order
+num.count(3)  # Count the occurrences of 3
+print(num)
+print(num.count(5))
