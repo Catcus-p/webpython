@@ -1,4 +1,4 @@
-def main():
+"""def main():
     age: int = 15
     print(age)
 
@@ -176,4 +176,31 @@ num.reverse()  # Reverse the list
 num.sort(reverse=True)  # Sort the list in descending order
 num.count(3)  # Count the occurrences of 3
 print(num)
-print(num.count(5))
+print(num.count(5))"""
+
+# Input string
+text = input("Enter a string: ")
+
+# Uppercase
+print("Uppercase:", text.upper())
+
+# Lowercase
+print("Lowercase:", text.lower())
+
+# Title Case
+print("Title Case:", text.title())
+
+# Word Count
+words = len(text.split())
+print("Word Count:", words)
+
+# Replace
+old_word = input("Enter word to replace: ")
+new_word = input("Enter new word: ")
+print("After Replace:", text.replace(old_word, new_word))
+
+# Length
+print("Length of String:", len(text))
+
+# Switch Case
+print("Switch Case:", text.swapcase())
