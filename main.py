@@ -204,3 +204,28 @@ print("Length of String:", len(text))
 
 # Switch Case
 print("Switch Case:", text.swapcase())
+
+
+rows = 4
+
+for i in range(1, rows + 1):
+    print(" " * (rows - i), end="")
+    print("* " * (2*i - 1))
+
+rows = 4
+
+for i in range(1, rows + 1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+
+
+import random
+
+minimum = int(input("Enter minimum: "))
+maximum = int(input("Enter maximum: "))
+
+num = random.randint(minimum, maximum)
+
+print("Random Number:", num)
