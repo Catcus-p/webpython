@@ -176,7 +176,7 @@ num.reverse()  # Reverse the list
 num.sort(reverse=True)  # Sort the list in descending order
 num.count(3)  # Count the occurrences of 3
 print(num)
-print(num.count(5))"""
+print(num.count(5))
 
 # Input string
 text = input("Enter a string: ")
@@ -228,4 +228,31 @@ maximum = int(input("Enter maximum: "))
 
 num = random.randint(minimum, maximum)
 
-print("Random Number:", num)
+print("Random Number:", num)"""
+
+a1 = (2)
+a2 = (3,)
+print(type(a1))
+print(type(a2))
+
+phone_book = {
+    "Alice": "123-456-7890",
+    "Bob": "987-654-3210",
+    "Charlie": "555-555-5555"
+}
+
+# Access value using key
+print(phone_book["Alice"])
+
+# Add new item
+phone_book["David"] = "111-222-3333"
+print(phone_book)
+
+# Using get() method
+retrieve = phone_book.get("Alice")
+
+# Using get() with default value
+ #result = phone_book.get("Eve", "Not found")
+
+print(retrieve)
+print(result)
