@@ -235,24 +235,65 @@ a2 = (3,)
 print(type(a1))
 print(type(a2))
 
+# 📘 Dictionary Example: Phone Book
+
 phone_book = {
     "Alice": "123-456-7890",
     "Bob": "987-654-3210",
     "Charlie": "555-555-5555"
 }
 
-# Access value using key
-print(phone_book["Alice"])
+# 🔹 Accessing a value using key
+print("Alice's Number:", phone_book["Alice"])
 
-# Add new item
+# 🔹 Adding new items
 phone_book["David"] = "111-222-3333"
+phone_book["Eva"] = "444-555-6666"
+
+# 🔹 Printing updated dictionary
+print("\nUpdated Phone Book:")
 print(phone_book)
 
-# Using get() method
+# 🔹 Using get() method
 retrieve = phone_book.get("Alice")
 
-# Using get() with default value
- #result = phone_book.get("Eve", "Not found")
+# 🔹 Using get() with default value
+result = phone_book.get("Eve", "Not found")
 
+print("\nRetrieved Value:")
 print(retrieve)
+
+print("\nChecking Missing Key:")
 print(result)
+
+# 🔹 Updating a value
+phone_book["Bob"] = "000-000-0000"
+
+print("\nAfter Updating Bob's Number:")
+print(phone_book)
+
+# 🔹 Removing an item
+phone_book.pop("Charlie")
+
+print("\nAfter Removing Charlie:")
+print(phone_book)
+
+# 🔹 Printing all keys
+print("\nAll Names:")
+print(phone_book.keys())
+
+# 🔹 Printing all values
+print("\nAll Phone Numbers:")
+print(phone_book.values())
+
+# 🔹 Looping through dictionary
+print("\nPhone Book Details:")
+for name, number in phone_book.items():
+    print(name, ":", number)
+
+# 🔹 Checking if key exists
+if "Alice" in phone_book:
+    print("\nAlice exists in the phone book.")
+
+# 🔹 Length of dictionary
+print("\nTotal Contacts:", len(phone_book))
