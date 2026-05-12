@@ -230,6 +230,8 @@ num = random.randint(minimum, maximum)
 
 print("Random Number:", num)"""
 
+
+"""
 a1 = (2)
 a2 = (3,)
 print(type(a1))
@@ -297,3 +299,40 @@ if "Alice" in phone_book:
 
 # 🔹 Length of dictionary
 print("\nTotal Contacts:", len(phone_book))
+"""
+
+
+# Function with default argument
+def greet(name, greeting="hello "):
+    return f"{greeting}{name}"
+
+
+result = greet("Alice")
+print(result)
+
+
+# Function using *args
+def sum_values(*args):
+    print(f"The values are {args}")
+    print(f"This type is {type(args)}")
+
+
+sum_values(1, 2)
+sum_values(1, 2, 3, 4)
+
+
+# Function using **kwargs
+def employee(**details):
+    print(details)
+    print(type(details))
+
+
+employee(name="ram", phone="0000", type="full time")
+
+def everything(required, *args, default="default", **kwargs):
+    print(f"Required: {required}")
+    print(f"Args: {args}")
+    print(f"Default: {default}")
+    print(f"Kwargs: {kwargs}")
+
+everything("required value", 1, 2, 3, default="custom default", name="value1", age="2")
