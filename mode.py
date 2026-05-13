@@ -53,3 +53,13 @@ with open("students.csv", "r") as f:
     reader = csv.DictReader(f)
     for row in reader:
         print(f"{row['Name']} is {row['Age']} years old.")
+
+with open("students.csv", "r+") as f:
+    reader = csv.DictReader(f)
+    students = list(reader)
+    students.append({"Name": "Sita", "Age": "20"})
+    f.seek(0)
+    writer = csv.DictWriter(f, fieldnames=["Name", "Age"])
+    writer.writeheader()
+    writer.writerows(students)
+    
