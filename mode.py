@@ -35,6 +35,21 @@ with open("students.csv", "w", newline="") as f:
     writer.writerows(student)
 
 with open("students.csv", "r") as f:
-    reader = csv.reader(f)
+    reader = csv.DictReader(f)
     for row in reader:
         print(row)
+
+with open("students.csv", "r") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row["Name"])
+
+with open("students.csv", "r") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row["Age"])
+
+with open("students.csv", "r") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(f"{row['Name']} is {row['Age']} years old.")
