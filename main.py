@@ -300,7 +300,7 @@ if "Alice" in phone_book:
 # 🔹 Length of dictionary
 print("\nTotal Contacts:", len(phone_book))
 """
-
+"""
 
 # Function with default argument
 def greet(name, greeting="hello "):
@@ -335,4 +335,4 @@ def everything(required, *args, default="default", **kwargs):
     print(f"Default: {default}")
     print(f"Kwargs: {kwargs}")
 
-everything("required value", 1, 2, 3, default="custom default", name="value1", age="2")
+everything("required value", 1, 2, 3, default="custom default", name="value1", age="2") """
