@@ -1,3 +1,4 @@
+"""
 with open("file.txt", "w") as f:
     f.write("Hello World\n")
     f.write("This is Python file handling\n")
@@ -19,4 +20,21 @@ with open("file.txt", "r") as f:
 
 with open("file.txt", "r") as f:
     for line in f:
-        print(line.strip())
+        print(line.strip())"""
+
+import csv
+
+student = [
+    ["Name", "Age"],
+    ["Raj", "21"],
+    ["Shyam", "22"]
+]
+
+with open("students.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerows(student)
+
+with open("students.csv", "r") as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
