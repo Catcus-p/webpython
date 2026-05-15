@@ -21,7 +21,7 @@ with open("file.txt", "r") as f:
 with open("file.txt", "r") as f:
     for line in f:
         print(line.strip())"""
-
+"""
 import csv
 
 student = [
@@ -61,5 +61,16 @@ with open("students.csv", "r+") as f:
     f.seek(0)
     writer = csv.DictWriter(f, fieldnames=["Name", "Age"])
     writer.writeheader()
-    writer.writerows(students)
+    writer.writerows(students) """
     
+class dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        return "Woof!"
+    def display_name(self):
+        print( f"{self.name} is {self.age} years old.")
+rex = dog("Rex", 5)
+rex.display_name()
