@@ -62,7 +62,7 @@ with open("students.csv", "r+") as f:
     writer = csv.DictWriter(f, fieldnames=["Name", "Age"])
     writer.writeheader()
     writer.writerows(students) """
-    
+"""  
 class dog:
     def __init__(self, name, age):
         self.name = name
@@ -73,4 +73,22 @@ class dog:
     def display_name(self):
         print( f"{self.name} is {self.age} years old.")
 rex = dog("Rex", 5)
-rex.display_name()
+rex.display_name()"""
+
+from pathlib import Path
+
+print(Path.home())
+print(Path.cwd())
+
+import json
+
+json_val = {
+    "name": "ram",
+    "age": 20
+}
+
+with open("students.json", "w") as f:
+    json.dump(json_val, f, indent=0)
+with open("students.json","r")as f:
+    data = json.load(f)
+    print(data)
